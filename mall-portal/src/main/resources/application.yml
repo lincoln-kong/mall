@@ -2,7 +2,7 @@ spring:
   application:
     name: mall-portal
   profiles:
-    active: prod #默认为开发环境
+    active: dev #默认为开发环境
 
 mybatis:
   mapper-locations:
@@ -30,9 +30,9 @@ secure:
       - /druid/**
       - /actuator/**
       - /sso/**
+      - /config/**
       - /home/**
       - /product/**
-      - /brand/**
 
 # 自定义redis key
 redis:
